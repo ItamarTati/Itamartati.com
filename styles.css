@@ -2,24 +2,3 @@ html {
     background: black;
     color: white;
 }
-
-#itamar {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-#itamar h1 {
-    font-size: 80px;
-}
-
-#itamar h3 {
-    font-size: 50px;
-}
-
-#itamar img {
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-}
