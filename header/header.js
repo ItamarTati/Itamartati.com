@@ -7,7 +7,7 @@ template.innerHTML = `
                 <title>Itamar Header</title>
             </head>
             <body>
-            <header class="top-navigation">
+            <header id="header">
                 <itamar-profile>
                 </itamar-profile>
                 <nav>
