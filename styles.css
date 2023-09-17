@@ -1,16 +1,6 @@
 html {
     color: white;
-    background: #000000;
-    background: -webkit-linear-gradient(
-            to right,
-            #434343,
-            #000000
-    );
-    background: linear-gradient(
-            to right,
-            #434343,
-            #000000
-    );
+    background-color: rgb(5 8 22 / 1);
     min-height: 10000px;
 }
 
