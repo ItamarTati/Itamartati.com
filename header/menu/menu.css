@@ -36,11 +36,11 @@
 .menu-dropdown {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: 0;
     margin: 10px;
     min-width: 140px;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right,#434343,#000000);
     border-radius: 10px;
     z-index: 10;
 }

@@ -15,7 +15,7 @@ template.innerHTML = `
                         <li><a href="#work">Volunteering</a></li>
                     </ul>
                     <div class="menu-toggle" >
-                        <img src="../public/assets/menu.svg" alt="menu" class="menu-icon">
+                        <img src="../../public/assets/menu.svg" alt="menu" class="menu-icon">
                         <div class="menu-dropdown">
                             <ul class="menu">
                                 <li><a href="#about">About</a></li>
@@ -46,10 +46,10 @@ class Menu extends HTMLElement {
 
             if (this.menuVisible) {
                 this.menuDropdown.style.display = 'block';
-                this.menuIcon.src = "../public/assets/close.svg"
+                this.menuIcon.src = "../../public/assets/close.svg"
             } else {
                 this.menuDropdown.style.display = 'none';
-                this.menuIcon.src = "../public/assets/menu.svg"
+                this.menuIcon.src = "../../public/assets/menu.svg"
             }
         });
 
@@ -59,6 +59,7 @@ class Menu extends HTMLElement {
             if (mediaQuery.matches) {
                 this.menuVisible = false;
                 this.menuDropdown.style.display = 'none';
+                this.menuIcon.src = "../../public/assets/menu.svg"
             }
         };
 
