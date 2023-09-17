@@ -2,10 +2,13 @@ html {
     color: white;
     background-color: rgb(5 8 22 / 1);
     min-height: 10000px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 #hero{
-    background-image: url(./public/herobg.png);
+    background-image: url(./public/assets/herobg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

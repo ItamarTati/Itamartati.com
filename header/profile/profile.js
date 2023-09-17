@@ -6,9 +6,8 @@ template.innerHTML = `
             </head>
             <body>
             <div id="itamar">
-               <h1>ItamarTati</h1>
-               <h3>Software Engineer</h3>
-               <img src="../../header/profile/profile.jpg" alt="image of Itamar Tati"/>
+               <img src="../../public/assets/profile.jpg" alt="image of Itamar Tati"/>
+               <h2>Itamar Tati | Software Engineer</h2>
             </div>
             </body>`;
 class Profile extends HTMLElement {

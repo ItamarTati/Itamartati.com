@@ -1,4 +1,4 @@
-import '../header/profile/profile.js'
+import './profile/profile.js'
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -8,26 +8,29 @@ template.innerHTML = `
             </head>
             <body>
             <header id="header">
-                <itamar-profile>
-                </itamar-profile>
-                <nav>
-                    <ul>  
-                        <li>  
-                            <a href="#"> Home </a>  
-                        </li>  
-                        <li>  
-                            <a href="#"> About </a>  
-                        </li>  
-                        <li>  
-                            <a href="#"> Contact </a>  
-                        </li>  
-                        <li> 
-                            <a href="#"> Terms of use </a>  
-                        </li>  
-                        <li>  
-                            <a href="#"> Join Us </a>  
-                        </li>  
-                    </ul>  
+                <nav class="navbar">
+                    <a href="/">
+                        <itamar-profile id="profile">
+                        </itamar-profile>
+                    </a>
+                    <ul class="menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Articles</a></li>
+                        <li><a href="#work">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#work">Videos</a></li>
+                        <li><a href="#work">Volunteering</a></li>
+                    </ul>
+<!--                    <div class="menu-toggle">-->
+<!--                        <img src="../public/assets/menu.svg" alt="menu" class="menu-icon">-->
+<!--                        <div class="menu-dropdown">-->
+<!--                            <ul>-->
+<!--                                <li><a href="#about">About</a></li>-->
+<!--                                <li><a href="#work">Work</a></li>-->
+<!--                                <li><a href="#projects">Projects</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </nav>
             </header>
             </body>`;
