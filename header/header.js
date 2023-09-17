@@ -14,7 +14,7 @@ template.innerHTML = `
                         <itamar-profile id="profile">
                         </itamar-profile>
                     </a>
-                    <itamar-menu>
+                    <itamar-menu id="menu">
                     </itamar-menu>
                 </nav>
             </header>

@@ -14,7 +14,7 @@ template.innerHTML = `
                         <li><a href="#work">Videos</a></li>
                         <li><a href="#work">Volunteering</a></li>
                     </ul>
-                    <div class="menu-toggle" >
+                    <div class="menu-toggle">
                         <img src="../../public/assets/menu.svg" alt="menu" class="menu-icon">
                         <div class="menu-dropdown">
                             <ul class="menu">

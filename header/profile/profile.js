@@ -5,10 +5,18 @@ template.innerHTML = `
                 <title>Itamar Profile</title>
             </head>
             <body>
-            <div id="itamar">
-               <img src="../../public/assets/profile.jpg" alt="image of Itamar Tati"/>
-               <h2>Itamar Tati | Software Engineer</h2>
-            </div>
+                <div id="itamar">
+                   <img src="../../public/assets/profile.jpg" alt="image of Itamar Tati"/>
+                   <h2>Itamar Tati <span>| Software Engineer</span></h2>
+                </div>
+                <div id="contacts">
+                    <a href="tel:+44756-848-8047">
+                        <p>&#9743;: +44 756 848 8047</p>                   
+                    </a>
+                    <a href="mailto:itamar.softwaredeveloper@gmail.com" target="_blank">
+                        <p>&#9993;: itamar.softwaredeveloper@gmail.com</p>
+                    </a>
+                </div>
             </body>`;
 class Profile extends HTMLElement {
 

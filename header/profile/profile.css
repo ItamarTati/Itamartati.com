@@ -7,9 +7,9 @@
     gap: 10px;
 }
 
-#itamar h1 {
-    font-size: 30px;
-    margin: 0;
+#itamar h2 {
+    font-weight: 700;
+    font-size: 25px;
 }
 
 #itamar img {
@@ -17,3 +17,36 @@
     width: 50px;
     height: 50px;
 }
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(170, 166, 195);
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    span {
+        display: none;
+    }
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+
