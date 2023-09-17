@@ -1,4 +1,5 @@
 import './profile/profile.js'
+import './menu/menu.js'
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -13,24 +14,8 @@ template.innerHTML = `
                         <itamar-profile id="profile">
                         </itamar-profile>
                     </a>
-                    <ul class="menu">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Articles</a></li>
-                        <li><a href="#work">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#work">Videos</a></li>
-                        <li><a href="#work">Volunteering</a></li>
-                    </ul>
-<!--                    <div class="menu-toggle">-->
-<!--                        <img src="../public/assets/menu.svg" alt="menu" class="menu-icon">-->
-<!--                        <div class="menu-dropdown">-->
-<!--                            <ul>-->
-<!--                                <li><a href="#about">About</a></li>-->
-<!--                                <li><a href="#work">Work</a></li>-->
-<!--                                <li><a href="#projects">Projects</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                    <itamar-menu>
+                    </itamar-menu>
                 </nav>
             </header>
             </body>`;
