@@ -28,6 +28,24 @@ class Header extends HTMLElement {
         this.attachShadow({mode: 'open'});
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+        const checkOverlap = () => {
+            const navbar = this.shadowRoot.querySelector('.navbar');
+            const restPage = document.querySelector('#main');
+
+            const navbarRect = navbar.getBoundingClientRect();
+            const otherDivRect = restPage.getBoundingClientRect();
+
+            if (navbarRect.bottom > otherDivRect.top) {
+                navbar.classList.add('navbar-overlap');
+            } else {
+                navbar.classList.remove('navbar-overlap');
+            }
+        }
+
+        window.addEventListener('scroll', checkOverlap);
+
+        window.addEventListener('load', checkOverlap);
     }
 }
 

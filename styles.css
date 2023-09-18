@@ -1,10 +1,10 @@
 html {
     color: white;
     background-color: var(--backgroundColour);
-    min-height: 10000px;
     margin: 0;
     padding: 0;
     font-family: Poppins, sans-serif;
+    height: 10000px;
 }
 
 

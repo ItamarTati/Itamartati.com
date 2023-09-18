@@ -7,7 +7,7 @@ template.innerHTML = `
             <body>
                 <div id="itamar">
                    <img src="../../public/assets/profile.jpg" alt="image of Itamar Tati"/>
-                   <h2>Itamar Tati <span>| Software Engineer</span></h2>
+                   <h2>Itamar Tati<span> | Software Engineer</span></h2>
                 </div>
                 <div id="contacts">
                     <a href="tel:+44756-848-8047">

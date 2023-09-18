@@ -43,3 +43,6 @@
     cursor: pointer;
 }
 
+.navbar-overlap {
+    background-color: var(--backgroundColour) !important;
+}
