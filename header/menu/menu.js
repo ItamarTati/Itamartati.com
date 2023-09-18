@@ -78,6 +78,7 @@ class Menu extends HTMLElement {
             ) {
                 this.menuVisible = false;
                 this.menuDropdown.style.display = 'none';
+                this.menuIcon.src = "../../public/assets/menu.svg"
             }
         });
 
