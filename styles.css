@@ -26,69 +26,6 @@ h1 {
     font-weight: bold;
 }
 
-#hero{
-    background-image: url(./public/assets/herobg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    min-height: 100dvh;
-    display: grid;
-    place-items: center;
-    align-content: center;
-}
-
-#hero span {
-    color: #915EFF;
-}
-
-#hero-introduction {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-#hero-cover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#hero-introduction h1 {
-    font-size: 50px;
-    font-weight: 900;
-    padding: 0;
-    margin: 0;
-}
-
-#hero-introduction p {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-}
-
-
- .ball {
-    background-color: rgb(145 94 255 / 1);
-    border-radius: 9999px;
-    width: 1.25rem;
-    height: 1.25rem;
-
-}
-
-.line {
-    width: 0.25rem;
-    height: 10rem;
-    background-image: -webkit-linear-gradient(-90deg, rgb(128, 77, 238) 0%, rgba(60, 51, 80, 0) 100%);
-}
-
-.bio {
-    display: flex;
-    flex-direction: column;
-}
-
 
 
 
