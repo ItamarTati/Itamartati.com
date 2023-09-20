@@ -11,7 +11,7 @@ template.innerHTML =`
                         <div class="ball"></div>
                         <div class="line"></div>
                     </div>
-                    <div class="bio">
+                    <div class="bio" id="main">
                         <h1>
                             Hello, I'm <span>Itamar</span></h1>
                         <p>a customer-oriented software engineer
@@ -28,6 +28,7 @@ class Hero extends HTMLElement {
         this.attachShadow({ mode: 'open' });
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
+        this.shadowRoot.getElementById('hero').style.backgroundImage = `url('../public/assets/herobg.png')`;
     }
 }
 

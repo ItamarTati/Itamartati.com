@@ -1,5 +1,6 @@
 import './profile/profile.js'
 import './menu/menu.js'
+import '../hero/hero.js'
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -30,16 +31,22 @@ class Header extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
 
         const checkOverlap = () => {
-            const navbar = this.shadowRoot.querySelector('.navbar');
-            const restPage = document.querySelector('#main');
+            const hero = document.querySelector('itamar-hero');
 
-            const navbarRect = navbar.getBoundingClientRect();
-            const otherDivRect = restPage.getBoundingClientRect();
+            if (hero) {
+                const heroShadow = hero.shadowRoot;
 
-            if (navbarRect.bottom > otherDivRect.top) {
-                navbar.classList.add('navbar-overlap');
-            } else {
-                navbar.classList.remove('navbar-overlap');
+                const navbar = this.shadowRoot.querySelector('.navbar');
+                const restPage = heroShadow.querySelector('.bio');
+
+                const navbarRect = navbar.getBoundingClientRect();
+                const restPageRect = restPage.getBoundingClientRect();
+
+                if (navbarRect.bottom > restPageRect.top) {
+                    navbar.classList.add('navbar-overlap');
+                } else {
+                    navbar.classList.remove('navbar-overlap');
+                }
             }
         }
 
