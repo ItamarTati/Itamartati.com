@@ -15,7 +15,7 @@
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px 0;
     z-index: 20;
     transition: background-color 0.3s;
