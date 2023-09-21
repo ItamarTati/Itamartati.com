@@ -11,7 +11,7 @@
 }
 
 #hero span {
-    color: #915EFF;
+    color: var(--herocolor);
 }
 
 #hero-introduction {
@@ -43,7 +43,7 @@
 
 
 .ball {
-    background-color: rgb(145 94 255 / 1);
+    background-color: var(--herocolor);
     border-radius: 9999px;
     width: 1.25rem;
     height: 1.25rem;

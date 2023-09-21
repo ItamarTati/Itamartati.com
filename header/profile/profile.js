@@ -2,6 +2,7 @@ const template = document.createElement('template');
 template.innerHTML = `
             <head>
                 <link rel="stylesheet" href="../../header/profile/profile.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                 <title>Itamar Profile</title>
             </head>
             <body>
@@ -11,11 +12,15 @@ template.innerHTML = `
                 </div>
                 <div id="contacts">
                     <a href="tel:+44756-848-8047">
-                        <p>&#9743;: +44 756 848 8047</p>                   
+                        <p><i class="fa fa-phone"></i>  +44 756 848 8047</p>                   
                     </a>
                     <a href="mailto:itamar.softwaredeveloper@gmail.com" target="_blank">
-                        <p>&#9993;: itamar.softwaredeveloper@gmail.com</p>
+                        <p><i class="fa fa-envelope"></i> itamar.softwaredeveloper@gmail.com</p>
+                    </a>                   
+                    <a href="mailto:itamar.softwaredeveloper@gmail.com" target="_blank">
+                        <p><i class="fa fa-download"></i> Download my Resume</p>
                     </a>
+                    
                 </div>
             </body>`;
 class Profile extends HTMLElement {
