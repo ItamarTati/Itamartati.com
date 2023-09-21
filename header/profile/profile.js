@@ -17,7 +17,7 @@ template.innerHTML = `
                     <a href="mailto:itamar.softwaredeveloper@gmail.com" target="_blank">
                         <p><i class="fa fa-envelope"></i> itamar.softwaredeveloper@gmail.com</p>
                     </a>                   
-                    <a href="mailto:itamar.softwaredeveloper@gmail.com" target="_blank">
+                    <a href="../../Itamar%20Tati's%20CV.pdf" target="_blank">
                         <p><i class="fa fa-download"></i> Download my Resume</p>
                     </a>
                     
