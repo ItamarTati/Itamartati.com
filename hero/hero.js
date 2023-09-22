@@ -1,4 +1,6 @@
 const template = document.createElement('template');
+
+
 template.innerHTML =`
             <head>
                 <link rel="stylesheet" href="../hero/hero.css">
@@ -14,7 +16,7 @@ template.innerHTML =`
                     <div class="bio" id="main">
                         <h1>
                             Hello, I'm <span>Itamar</span></h1>
-                        <p>a customer-oriented software engineer
+                            <p>a customer-oriented software engineer
                             <br>with a focus on developing performant software</p>
                     </div>
                 </div>
