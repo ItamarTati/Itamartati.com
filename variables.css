@@ -1,4 +1,6 @@
 :root {
     --backgroundColour: rgb(5 8 22 / 1);
-    --herocolor: rgb(145 94 255 / 1)
+    --heroColor: rgb(145 94 255 / 1);
+    --bloodRed: rgb(136 8 8 / 1);
+
 }
