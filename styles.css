@@ -5,7 +5,11 @@ html {
     padding: 0;
     font-family: Poppins, sans-serif;
     color-scheme: dark;
-    height: 10000px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -24,6 +28,12 @@ h1 {
     margin-inline-start: 0;
     margin-inline-end: 0;
     font-weight: bold;
+}
+
+#main {
+    background-image: url('public/assets/herobg.png');
+    height: 100dvh;
+    display: block;
 }
 
 

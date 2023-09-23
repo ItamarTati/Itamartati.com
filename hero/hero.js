@@ -1,6 +1,5 @@
+import './computer/computer.js'
 const template = document.createElement('template');
-
-
 template.innerHTML =`
             <head>
                 <link rel="stylesheet" href="../hero/hero.css">
@@ -20,6 +19,7 @@ template.innerHTML =`
                             <br>with a focus on developing performant software</p>
                     </div>
                 </div>
+                <itamar-computer></itamar-computer>
             </section>
         </body>`
 
@@ -30,7 +30,6 @@ class Hero extends HTMLElement {
         this.attachShadow({ mode: 'open' });
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.getElementById('hero').style.backgroundImage = `url('../public/assets/herobg.png')`;
     }
 }
 

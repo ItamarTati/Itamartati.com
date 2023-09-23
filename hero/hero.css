@@ -1,13 +1,13 @@
 #hero{
-    background-image: url('../public/assets/herobg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-    min-height: 100dvh;
     display: grid;
     place-items: center;
     align-content: center;
+    top: 180px;
+    position: absolute;
 }
 
 #hero span {
@@ -52,7 +52,7 @@
 
 .line {
     width: 0.25rem;
-    height: 10rem;
+    height: 15rem;
     background-image: -webkit-linear-gradient(-90deg, rgb(128, 77, 238) 0%, rgba(60, 51, 80, 0) 100%);
 }
 
