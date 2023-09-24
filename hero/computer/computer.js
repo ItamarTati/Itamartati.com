@@ -14,7 +14,8 @@ class Computer extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
 
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const camera = new THREE
+            .PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
         let object;
