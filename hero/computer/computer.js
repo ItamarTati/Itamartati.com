@@ -36,10 +36,13 @@ class Computer extends HTMLElement {
         );
 
         const renderer = new THREE.WebGLRenderer({ alpha: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(window.innerWidth - 20, window.innerHeight);
 
         this.shadowRoot.getElementById("container3D").appendChild(renderer.domElement);
         this.shadowRoot.getElementById("container3D").style.cursor = 'grabbing'
+        this.shadowRoot.getElementById("container3D").style.width = '100%'
+
+
         camera.position.set( 0, 1, 3)
 
 
@@ -71,8 +74,8 @@ class Computer extends HTMLElement {
         controls.maxDistance = 3;
         controls.enableZoom = false;
         controls.enablePan = false;
-        // controls.minPolarAngle = 1;
-        // controls.maxPolarAngle = 1;
+        controls.minPolarAngle = 1;
+        controls.maxPolarAngle = 1;
 
         function animate() {
             requestAnimationFrame(animate);
@@ -82,7 +85,8 @@ class Computer extends HTMLElement {
         window.addEventListener("resize", function () {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            console.log(window.innerWidth)
+            renderer.setSize(window.innerWidth - 20, window.innerHeight);
         });
 
 
@@ -93,8 +97,6 @@ class Computer extends HTMLElement {
         }
 
         animate();
-
-
     }
 }
 
