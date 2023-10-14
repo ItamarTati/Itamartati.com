@@ -7,23 +7,23 @@ template.innerHTML = `
             </head>
             <body>
                     <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Articles</a></li>
-                        <li><a href="#work">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#work">Videos</a></li>
-                        <li><a href="#work">Courses</a></li>
+                        <li><a href="../../pages/about.html">About</a></li>
+                        <li><a href="../../pages/articles.html">Articles</a></li>
+                        <li><a href="../../pages/experience.html">Experience</a></li>
+                        <li><a href="../../pages/projects.html">Projects</a></li>
+                        <li><a href="../../pages/videos.html">Videos</a></li>
+                        <li><a href="../../pages/courses.html">Courses</a></li>
                     </ul>
                     <div class="menu-toggle">
                         <img src="../../public/assets/menu.svg" alt="menu" class="menu-icon">
                         <div class="menu-dropdown">
                             <ul class="menu">
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#work">Articles</a></li>
-                                <li><a href="#work">Experience</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#work">Videos</a></li>
-                                <li><a href="#work">Courses</a></li>
+                                <li><a href="../../pages/about.html">About</a></li>
+                                <li><a href="../../pages/articles.html">Articles</a></li>
+                                <li><a href="../../pages/experience.html">Experience</a></li>
+                                <li><a href="../../pages/projects.html">Projects</a></li>
+                                <li><a href="../../pages/videos.html">Videos</a></li>
+                                <li><a href="../../pages/courses.html">Courses</a></li>
                             </ul>
                         </div>
                     </div>
