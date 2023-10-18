@@ -1,1 +1,4 @@
-document.getElementById('main').style.backgroundImage = `url('public/assets/herobg.png')`;
+window.addEventListener('load', function () {
+    document.documentElement.style.display = 'block'
+    console.log('working')
+})
