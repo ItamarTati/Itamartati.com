@@ -39,6 +39,33 @@ class Menu extends HTMLElement {
         this.menuDropdown = this.shadowRoot.querySelector('.menu-dropdown');
         this.menuIcon = this.shadowRoot.querySelector('.menu-icon');
 
+        let index = 0
+
+        let urlLink = window.location.href
+
+        for(let i = urlLink.length; i > 0; i--) {
+            let character = urlLink[i];
+            if(character === '/') {
+                index = i;
+                break;
+            }
+        }
+
+        let pageName = urlLink.substring(index + 1, urlLink.length - 5);
+
+
+        const checkForMatchAndChangeColor = (pageName) => {
+            const links = this.shadowRoot.querySelectorAll('.nav-links li a, .menu-toggle ul.menu li a');
+            for (const link of links) {
+                if (link.textContent.toLowerCase() === pageName.toLowerCase()) {
+                    link.style.color = 'white';
+                }
+            }
+            return "No match found";
+        }
+
+        checkForMatchAndChangeColor(pageName);
+
         this.menuVisible = false;
 
         this.menuToggle.addEventListener('click', () => {
@@ -85,6 +112,7 @@ class Menu extends HTMLElement {
         this.menuDropdown.addEventListener('click', (event) => {
             event.stopPropagation();
         });
+
     }
 }
 
