@@ -51,7 +51,7 @@ class Menu extends HTMLElement {
             }
         }
 
-        let pageName = urlLink.substring(index + 1, urlLink.length - 5);
+        let pageName = urlLink.slice(index + 1, -5);
 
 
         const checkForMatchAndChangeColor = (pageName) => {
