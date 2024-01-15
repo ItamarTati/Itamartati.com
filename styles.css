@@ -32,8 +32,10 @@ h1 {
 }
 
 #main {
-    background-image: url('public/assets/herobg.png');
-    height: 100dvh;
+    background-image: url('public/assets/herobg.jpg');
+    height: 130dvh;
+    background-size: cover;
+    background-position: center;
     display: block;
 }
 
