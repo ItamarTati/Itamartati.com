@@ -24,6 +24,8 @@ class Computer extends HTMLElement {
         const scene = new THREE.Scene();
         const camera = new THREE
             .PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const aspectRatio = (4 / 3);
+
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
         let object;
@@ -44,7 +46,7 @@ class Computer extends HTMLElement {
         );
 
         const renderer = new THREE.WebGLRenderer({ alpha: true });
-        renderer.setSize((window.innerWidth - 20), (window.innerHeight - 20) * (4 / 3));
+        renderer.setSize((window.innerWidth - 20), (window.innerHeight - 20) * aspectRatio);
 
         this.shadowRoot.getElementById("container3D").appendChild(renderer.domElement);
         this.shadowRoot.getElementById("container3D").style.cursor = 'grabbing'
@@ -93,7 +95,7 @@ class Computer extends HTMLElement {
         window.addEventListener("resize", function () {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
-            renderer.setSize((window.innerWidth - 20), (window.innerHeight - 20) * (4 / 3));
+            renderer.setSize((window.innerWidth - 20), (window.innerHeight - 20) * aspectRatio);
         });
 
 
