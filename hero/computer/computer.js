@@ -4,7 +4,15 @@ import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 
 
 const template = document.createElement('template');
-template.innerHTML =`<div id="container3D"></div>`
+template.innerHTML = `
+<style>
+    #container3D {
+        margin-top: -500px;
+    }
+</style>
+<div id="container3D"></div>
+`;
+
 
 class Computer extends HTMLElement {
     constructor() {
@@ -22,7 +30,7 @@ class Computer extends HTMLElement {
         let controls;
         const loader = new GLTFLoader();
         loader.load(
-            '/public/macbookpro/scene.gltf',
+            '/public/cyberpunkLaptop/scene.gltf',
             function (gltf) {
                 object = gltf.scene;
                 scene.add(object);
@@ -36,7 +44,7 @@ class Computer extends HTMLElement {
         );
 
         const renderer = new THREE.WebGLRenderer({ alpha: true });
-        renderer.setSize(window.innerWidth - 20, window.innerHeight);
+        renderer.setSize((window.innerWidth - 20), (window.innerHeight - 20) * (4 / 3));
 
         this.shadowRoot.getElementById("container3D").appendChild(renderer.domElement);
         this.shadowRoot.getElementById("container3D").style.cursor = 'grabbing'
@@ -85,8 +93,7 @@ class Computer extends HTMLElement {
         window.addEventListener("resize", function () {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
-            console.log(window.innerWidth)
-            renderer.setSize(window.innerWidth - 20, window.innerHeight);
+            renderer.setSize((window.innerWidth - 20), (window.innerHeight - 20) * (4 / 3));
         });
 
 
