@@ -53,6 +53,13 @@ const server = http.createServer(function(req, res){
         });
     }
 
+    else if(req.url === "/pages/testimonials.html"){
+        fs.readFile("./pages/testimonials.html", "UTF-8", function(err, html){
+            res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(html);
+        });
+    }
+
     else if(req.url.match("\.css$")){
         var cssPath = path.join(__dirname, req.url);
         var fileStream = fs.createReadStream(cssPath, "UTF-8");

@@ -7,7 +7,7 @@ template.innerHTML = `
             </head>
             <body>
                 <div id="itamar">
-                   <img src="../../public/assets/profile.jpg" alt="image of Itamar Tati"/>
+                   <img src="../../public/assets/profile2.jpg" alt="image of Itamar Tati"/>
                    <h2>Itamar Tati<span> | Software Engineer</span></h2>
                 </div>
                 <div id="contacts">
@@ -17,10 +17,6 @@ template.innerHTML = `
                     <a href="mailto:itamar.softwaredeveloper@gmail.com" target="_blank">
                         <p><i class="fa fa-envelope"></i> itamar.softwaredeveloper@gmail.com</p>
                     </a>                   
-                    <a href="../../Itamar%20Tati's%20CV.pdf" target="_blank">
-                        <p><i class="fa fa-download"></i> Download my Resume</p>
-                    </a>
-                    
                 </div>
             </body>`;
 class Profile extends HTMLElement {

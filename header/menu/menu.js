@@ -13,6 +13,7 @@ template.innerHTML = `
                         <li><a href="../../pages/projects.html">Projects</a></li>
                         <li><a href="../../pages/videos.html">Videos</a></li>
                         <li><a href="../../pages/courses.html">Courses</a></li>
+                        <li><a href="../../pages/testimonials.html">Testimonials</a></li>
                     </ul>
                     <div class="menu-toggle">
                         <img src="../../public/assets/menu.svg" alt="menu" class="menu-icon">
@@ -24,6 +25,7 @@ template.innerHTML = `
                                 <li><a href="../../pages/projects.html">Projects</a></li>
                                 <li><a href="../../pages/videos.html">Videos</a></li>
                                 <li><a href="../../pages/courses.html">Courses</a></li>
+                                <li><a href="../../pages/testimonials.html">Testimonials</a></li>
                             </ul>
                         </div>
                     </div>

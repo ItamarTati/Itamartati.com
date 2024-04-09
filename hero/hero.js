@@ -16,7 +16,7 @@ template.innerHTML =`
                         <h1>
                             Hello, I'm <span>Itamar</span></h1>
                             <p>a customer-oriented software engineer
-                            <br>with a focus on developing performant software</p>
+                            <br>with a focus on designing and developing performant websites and mobile apps</p>
                     </div>
                 </div>
                 <itamar-computer></itamar-computer>
