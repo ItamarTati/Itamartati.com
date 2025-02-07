@@ -1,8 +1,0 @@
-Model Information:
-* title:	Macbook_pro
-* source:	https://sketchfab.com/3d-models/macbook-pro-e9001a4b70f94e0d9a2bef2be547f60e
-* author:	pradeep Thaliyal (https://sketchfab.com/pradeep1)
-
-Model License:
-* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
-* requirements:	Use only in connection with events that are newsworthy or of public interest
