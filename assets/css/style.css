@@ -24537,3 +24537,8 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
 .swiper-pagination-bullet {
   background-color: #ffffff !important;
 }
+
+.logo-header {
+  width: 50px;
+  height: auto;
+}
