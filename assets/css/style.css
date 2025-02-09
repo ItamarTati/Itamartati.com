@@ -14973,6 +14973,8 @@ Section Head
   ===============================*/
 .img-box {
   position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   overflow: hidden;
   border-radius: 20px;
