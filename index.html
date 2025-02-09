@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -366,55 +368,49 @@
         </div>
         <!-- Tpm Latest Portfolio Area End -->
 
-
-        <!-- Tpm Our Supported Company Area Start -->
-        <div class="our-supported-company-area tmp-section-gapTop" id="testimonials">
+        <!-- Testimonials Carousel Start -->
+        <div class="testimonials-area tmp-section-gapTop" id="testimonials">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-1">
-                            <img src="assets/images/our-supported-company/company-logo-1.svg" alt="company-logo">
+                <div class="section-head mb--40 text-center">
+                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        Hear from my Happy Clients
+                    </h2>
+                </div>
+                <div class="swiper testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-video">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" 
+                                    title="Testimonial 1" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-2">
-                            <img src="assets/images/our-supported-company/company-logo-2.svg" alt="company-logo">
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-video">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" 
+                                    title="Testimonial 2" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-3">
-                            <img src="assets/images/our-supported-company/company-logo-3.svg" alt="company-logo">
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-video">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" 
+                                    title="Testimonial 3" frameborder="0" allowfullscreen></iframe>
+                            </div>
                         </div>
+                        <!-- Add more testimonials as needed -->
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-4">
-                            <img src="assets/images/our-supported-company/company-logo-4.svg" alt="company-logo">
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-5">
-                            <img src="assets/images/our-supported-company/company-logo-5.svg" alt="company-logo">
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-6">
-                            <img src="assets/images/our-supported-company/company-logo-6.svg" alt="company-logo">
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-7">
-                            <img src="assets/images/our-supported-company/company-logo-7.svg" alt="company-logo">
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-8">
-                            <img src="assets/images/our-supported-company/company-logo-8.svg" alt="company-logo">
-                        </div>
-                    </div>
+                    <!-- Navigation Buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
-        <!-- Tpm Our Supported Company Area End -->
+        <!-- Testimonials Carousel End -->
+
 
         <!-- Videos Section Start -->
         <section class="videos-section tmp-section-gapTop" id="videos">
@@ -1227,6 +1223,24 @@
                 } catch (error) {
                     el.innerHTML = `<a href="${url}" target="_blank">Read Article</a>`;
                 }
+            });
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Swiper('.testimonial-slider', {
+                loop: true,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
             });
         });
         </script>

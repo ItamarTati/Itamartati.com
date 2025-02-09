@@ -24525,3 +24525,15 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
   color: #3d3d3d !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+.testimonial-video {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+}
+.swiper {
+  padding-bottom: 40px;
+}
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
