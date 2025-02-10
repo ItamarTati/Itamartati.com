@@ -152,6 +152,19 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+}
+
+.tmp-resume-area {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.blog-and-news-area{
+  padding-bottom: 200px;
+}
+
+body {
   font-size: var(--font-size-b1);
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
