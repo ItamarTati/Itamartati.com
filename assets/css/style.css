@@ -24556,7 +24556,8 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
   height: auto;
 }
 
-.tmp-resume-area {
+
+.row {
   max-width: 100%;
   overflow-x: hidden;
 }
