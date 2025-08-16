@@ -3,9 +3,9 @@ Welcome to my GitHub profile! Here I showcase my work, technical skills, and pro
 
 ## 👨‍💻 **About Me**  
 I’m a **Backend & Full-Stack Developer** with 5+ years of experience.  
-My focus is on **Kafka, Java, Scala, and Node.js**, but I also bring strong frontend and cloud skills.  
+My focus is on **Kafka, Java, Scala, PHP and Node.js**, but I also bring strong frontend and cloud skills.  
 
-- **Backend:** Java, Scala, Spring Boot, Node.js  
+- **Backend:** Java, Scala, Spring Boot, PHP, Node.js  
 - **Frontend:** React, Vue.js, Angular, WordPress  
 - **Databases:** PostgreSQL, MySQL, MongoDB  
 - **Cloud & DevOps:** Kafka, AWS, Docker  
