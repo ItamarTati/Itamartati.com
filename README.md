@@ -11,7 +11,7 @@ My focus is on **Kafka, Java, Scala, and Node.js**, but I also bring strong fron
 - **Cloud & DevOps:** Kafka, AWS, Docker  
 - **AI & Automation:** LLM APIs, AI-powered tools  
 
-I’ve contributed to enterprise and startup projects at **Panaseer, Dayshape, Fundment**, and built freelance solutions for **Waystation** and **UK Home Directory**.  
+I’ve contributed to enterprise and startup projects at **Panaseer, Dayshape, Kpler**, and built freelance solutions for **Waystation** and **YouChoose Care**.  
 
 ## 🛠 **Tech Stack**  
 ![Tech Stack](https://skillicons.dev/icons?i=java,scala,nodejs,spring,cs,dotnet,angular,react,vue,js,ts,python,aws,docker,wordpress,mysql,postgres,mongodb,kafka)  
@@ -29,3 +29,4 @@ I’ve contributed to enterprise and startup projects at **Panaseer, Dayshape, F
 - 💼 [LinkedIn](https://www.linkedin.com/in/itamar-tati-51b781243/)  
 - 📧 [Email](mailto:itamar.softwaredeveloper@gmail.com)  
 - 🌐 [Portfolio](https://itamartati.com)  
+
