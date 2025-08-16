@@ -17,9 +17,7 @@ I’ve contributed to enterprise and startup projects at **Panaseer, Dayshape, K
 ![Tech Stack](https://skillicons.dev/icons?i=java,scala,nodejs,spring,cs,dotnet,angular,react,vue,js,ts,python,aws,docker,wordpress,mysql,postgres,mongodb,kafka)  
 
 ## 📂 **Highlighted Projects**  
-- **UK Home Directory** – Revamped a WordPress business directory with modern plugins.  
-- **AI Script Generator** – A YouTube script writer powered by Gemini & fine-tuned LLM APIs.  
-- **YouChoose Care App** – Full-stack Ionic app for care management.  
+- **YouChoose Care App** – Full-stack Care Management App.  
 
 ## 📚 **Content & Community**  
 - 🎥 [YouTube Channel](https://www.youtube.com/@ItamarTati) – Web dev tutorials & insights.  
@@ -29,4 +27,5 @@ I’ve contributed to enterprise and startup projects at **Panaseer, Dayshape, K
 - 💼 [LinkedIn](https://www.linkedin.com/in/itamar-tati-51b781243/)  
 - 📧 [Email](mailto:itamar.softwaredeveloper@gmail.com)  
 - 🌐 [Portfolio](https://itamartati.com)  
+
 
