@@ -2,38 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Four Pillars of Getting a Software Engineer Job</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <!-- Bootstrap min css -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
-        :root {
-            --font-primary: 'Inter', 'Calibri', Arial, sans-serif;
-            --max-width: 8.5in;
-            --spacing-unit: 1rem;
-            --radius: 8px;
-            --transition: all 0.3s ease;
-        }
-
-        /* Light Mode */
-        .light {
-            --bg-body: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a4a4a;
-            --text-muted: #6b7280;
-            --accent: #3498db;
-            --accent-hover: #2980b9;
-            --border: #e5e7eb;
-            --card-bg: #f8f9fa;
-            --table-header: #e9ecef;
-            --formula-bg: #fffbeb;
-            --formula-border: #f59e0b;
-            --example-bg: #ecfeff;
-            --example-border: #06b6d4;
-            --emphasis: #e74c3c;
-            --separator: #d1d5db;
-            --note-bg: #f0fdf4;
-            --note-border: #bbf7d0;
-        }
 
         /* Dark Mode */
         .dark {
@@ -54,50 +36,6 @@
             --separator: #475569;
             --note-bg: #0f3a1f;
             --note-border: #22c55e;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--font-primary);
-            line-height: 1.7;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: calc(var(--spacing-unit) * 2);
-            background-color: var(--bg-body);
-            color: var(--text-primary);
-            font-size: 11.5pt;
-            transition: var(--transition);
-        }
-
-        h1 {
-            font-size: 20pt;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-            border-bottom: 3px solid var(--accent);
-            padding-bottom: 0.75rem;
-            letter-spacing: -0.5px;
-        }
-
-        h2 {
-            font-size: 15pt;
-            font-weight: 600;
-            color: var(--accent);
-            margin: 2rem 0 1rem;
-            padding-left: 0.75rem;
-            border-left: 5px solid var(--accent);
-            line-height: 1.4;
-        }
-
-        .pillar-section {
-            margin-bottom: 2.5rem;
-            page-break-inside: avoid;
         }
 
         table {
@@ -245,13 +183,11 @@
         }
     </style>
 </head>
-<body class="light">
+<body class="dark">
 <!-- Theme Toggle -->
-<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-    <span id="theme-icon">🌙</span>
-</button>
+<div class="page-with-left-header">
 
-<h1>The Four Pillars of Getting a Software Engineer Job</h1>
+<h1 class="title tmp-scroll-trigger">The Four Pillars of Getting a Software Engineer Job</h1>
 
 <div class="intro">
     This framework focuses on treating the job search as a structured process, ensuring you maximize both your <strong>volume</strong> and your <strong>quality</strong> across all stages.
@@ -402,6 +338,307 @@
         } else {
             icon.textContent = '🌙';
         }
+    });
+</script>
+<div class="d-none d-xl-block header-style-2">
+    <header class="tmp-header-area d-flex align-items-start flex-column header-left-sticky">
+        <div class="inner-wrapper">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="assets/images/profilepic.jpeg" alt="personal-logo">
+                </a>
+            </div>
+            <nav id="sideNavs" class="mainmenu-nav navbar-example2 onepagenav">
+                <ul class="primary-menu nav nav-pills">
+                    <li class="nav-item current"><a class="nav-link smoth-animation" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg> Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>Resume</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#testimonials"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#videos"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video">
+                        <path d="M23 7l-7 5 7 5V7z"></path>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>Videos</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#blog"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>Blog</a></li>
+                </ul>
+            </nav>
+            <div class="footer">
+                <div class="social-share-style-1">
+                    <span class="title">Connect With Me On</span>
+                    <div class="social-link">
+                        <a href="https://www.youtube.com/@ItamarTati" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/itamar-tati-51b781243/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.tiktok.com/@itamartati007" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="tmp-popup-mobile-menu">
+    <div class="inner">
+        <div class="header-top">
+            <div class="close-menu">
+                <button class="close-button tmp-round-action-btn">
+                    <i class="fa-sharp fa-light fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="tmp-mainmenu onepagenav-click">
+            <li><a class="smoth-animation" href="#home">Home</a></li>
+            <li><a class="smoth-animation" href="#resume">Resume</a></li>
+            <li><a class="smoth-animation" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoth-animation" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoth-animation" href="#videos">Videos</a></li>
+            <li><a class="smoth-animation" href="#blog">Blog</a></li>
+        </ul>
+
+        <div class="social-share-style-1 mt--40">
+            <span class="title">Connect With Me On</span>
+            <div class="social-link">
+                <a href="https://www.youtube.com/@ItamarTati" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/itamar-tati-51b781243/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/@itamartati007" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Header Mobile Bar  -->
+<div class="tmp-responsive-header-style d-block d-xl-none header--sticky">
+    <div class="row align-items-center">
+        <div class="col-6">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" class="logo-header">
+                </a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="header-right text-end">
+                <div class="tmp-side-collups-area d-flex justify-content-end">
+                    <button class="tmp-menu-bars humberger_menu_active"><i class="fa-regular fa-bars-staggered"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header Mobile Bar  -->
+
+</div>
+
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/vendor/jquery-ui.min.js"></script>
+<script src="assets/js/vendor/waypoints.min.js"></script>
+
+<script src="assets/js/plugins/odometer.js"></script>
+<script src="assets/js/vendor/appear.js"></script>
+
+
+<script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+<script src="assets/js/plugins/swiper.js"></script>
+
+<script src="assets/js/plugins/gsap.js"></script>
+<script src="assets/js/plugins/splittext.js"></script>
+<script src="assets/js/plugins/scrolltigger.js"></script>
+<script src="assets/js/plugins/scrolltoplugins.js"></script>
+<script src="assets/js/plugins/smoothscroll.js"></script>
+<!-- bootstrap Js-->
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/waw.js"></script>
+<script src="assets/js/plugins/isotop.js"></script>
+<script src="assets/js/plugins/animation.js"></script>
+<script src="assets/js/plugins/contact.form.js"></script>
+<script src="assets/js/vendor/backtop.js"></script>
+<script src="assets/js/vendor/particle.js"></script>
+<script src="assets/js/plugins/text-type.js"></script>
+<!-- custom Js -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    particlesJS('particles-js',
+
+        {
+            "particles": {
+                "number": {
+                    "value": 20,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#ffffff", ]
+                },
+                "shape": {
+                    "type": "star",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.8,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 4,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 800,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true,
+            "config_demo": {
+                "hide_card": false,
+                "background_color": "#b61924",
+                "background_image": "",
+                "background_position": "50% 50%",
+                "background_repeat": "no-repeat",
+                "background_size": "cover"
+            }
+        }
+
+    );
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", async function () {
+        document.querySelectorAll('.og-preview').forEach(async (el) => {
+            const url = el.getAttribute('data-url');
+            try {
+                const res = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}`);
+                const data = await res.json();
+                if (data.status === 'success') {
+                    el.innerHTML = `
+                        <a href="${url}" target="_blank" class="og-card">
+                            <img src="${data.data.image.url}" alt="${data.data.title}" class="og-image">
+                            <div class="og-content">
+                                <h3 class="og-title">${data.data.title}</h3>
+                                <p class="og-description">${data.data.description}</p>
+                            </div>
+                        </a>
+                    `;
+                } else {
+                    el.innerHTML = `<a href="${url}" target="_blank">Read Article</a>`;
+                }
+            } catch (error) {
+                el.innerHTML = `<a href="${url}" target="_blank">Read Article</a>`;
+            }
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Swiper('.testimonial-slider', {
+            loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
     });
 </script>
 </body>
