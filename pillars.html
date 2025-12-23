@@ -48,6 +48,8 @@
         .emphasis { color: var(--emphasis); font-weight: bold; }
         .separator { height: 1px; background: linear-gradient(to right, transparent, var(--separator), transparent); margin: 3rem 0; }
         .intro { font-style: italic; text-align: center; margin: 2rem 0 3rem; padding: 1.5rem; background-color: var(--card-bg); border-radius: var(--radius); border: 1px dashed var(--border); color: var(--text-secondary); font-size: 1.2rem; }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; color: var(--text-secondary); }
         @media (max-width: 1199px) { .page-with-left-header { padding-left: 0; } }
     </style>
 </head>
@@ -56,76 +58,116 @@
 <div id="particles-js"></div>
 
 <div class="page-with-left-header">
-    <site-header profile-image="assets/images/profilepic.jpeg" mobile-logo="assets/images/logo.png"></site-header>
-    <div class="container pt-5 end">
+    <header class="tmp-header-area d-none d-xl-flex align-items-start flex-column header-left-sticky">
+        <div class="inner-wrapper">
+            <div class="logo-area">
+                <a href="index.html"><img src="assets/images/profilepic.jpeg" alt="personal-logo" style="border-radius: 50%;"></a>
+            </div>
+            <nav id="sideNavs" class="mainmenu-nav navbar-example2 onepagenav">
+                <ul class="primary-menu nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container pt-5">
         <h1 class="title tmp-scroll-trigger text-center mb-4">The Four Pillars of Getting a Software Engineer Job</h1>
-        <div class="intro">This framework focuses on treating the job search as a structured process, ensuring you maximize both your <strong>volume</strong> and your <strong>quality</strong> across all stages.</div>
+
+        <div class="intro">
+            This framework focuses on treating the job search as a structured process, ensuring you maximize both your <strong>volume</strong> and your <strong>quality</strong> across all stages.
+        </div>
+
         <div class="separator"></div>
+
         <div class="pillar-section" id="pillar1">
             <h2>1. Mass Apply: The Numbers Game</h2>
+            <p>This is the most important, and often the most overlooked, part of the job search.</p>
             <table>
                 <tr><td>Your Goal</td><td>Apply to at least <span class="emphasis">5 jobs every day</span>.</td></tr>
-                <tr><td>Why it Works</td><td><strong>Software engineering job hunting is a numbers game.</strong></td></tr>
+                <tr><td>Why it Works</td><td><strong>Software engineering job hunting is a numbers game.</strong> The conversion rate from application to interview is typically 2% to 5%. Applying daily ensures you are constantly in the candidate pool.</td></tr>
+                <tr><td>How to Scale</td><td>Use <strong>job alerts</strong> on LinkedIn/Indeed and set aside dedicated daily time for applications.</td></tr>
             </table>
         </div>
+
         <div class="separator"></div>
+
         <div class="pillar-section" id="pillar2">
             <h2>2. Good Quality CV: The Metric-Driven Storyteller</h2>
+            <p>Your CV is a marketing document that proves your <strong>impact</strong>.</p>
             <table>
-                <tr><td>Your Focus</td><td>A CV that talks about your accomplishments through <strong>metrics</strong>.</td></tr>
+                <tr><td>Your Focus</td><td>A CV that talks about your accomplishments through <strong>metrics</strong> (quantifiable results).</td></tr>
+                <tr><td>Why it Works</td><td>Recruiters spend <strong>6-7 seconds</strong> per CV. Metrics are the fastest way to communicate the <strong>value you created</strong>.</td></tr>
+                <tr><td>How to Implement</td><td>
+                    <div class="formula">"Accomplished X, as measured by Y, by doing Z."</div>
+                    <div class="example">
+                        <strong>Instead of:</strong> "Responsible for improving website speed."<br>
+                        <strong>Use:</strong> "Optimized key database queries, <strong>reducing page load time by 40%</strong> and improving user retention."
+                    </div>
+                </td></tr>
             </table>
         </div>
+
         <div class="separator"></div>
+
         <div class="pillar-section" id="pillar3">
             <h2>3. Good Portfolio: Production-Ready Proof</h2>
+            <p>The portfolio shows, rather than tells, that you can build professional software.</p>
             <table>
                 <tr><td>Your Requirement</td><td>Portfolio needs to have <strong>professional production-ready projects</strong>.</td></tr>
+                <tr><td>Why it Works</td><td>Demonstrates <strong>system design</strong>, <strong>code quality</strong>, <strong>deployment</strong>, and <strong>end-to-end ownership</strong>.</td></tr>
+                <tr><td>How to Achieve It</td><td>
+                    <ul>
+                        <li><strong>A live, deployed link</strong> (e.g., Vercel, AWS).</li>
+                        <li><strong>Clear README</strong> in the GitHub repository.</li>
+                        <li><strong>Professional practices</strong> (unit tests, version control).</li>
+                        <li>Complexity beyond basic CRUD.</li>
+                    </ul>
+                </td></tr>
             </table>
         </div>
+
         <div class="separator"></div>
+
         <div class="pillar-section" id="pillar4">
             <h2>4. Good Interview Skills: Confident Execution</h2>
+            <p>This pillar ensures you convert your interview into a job offer.</p>
             <table>
-                <tr><td>Your Definition</td><td>A good interviewer is someone who <strong>speaks confidently</strong>, is <strong>prepared</strong>, and can <strong>code</strong>.</td></tr>
+                <tr><td>Your Definition</td><td>Someone who <strong>speaks confidently</strong>, is <strong>prepared</strong>, and can <strong>code fluently</strong>.</td></tr>
+                <tr><td>Why it Works</td><td>Interviews assess <strong>Technical Ability</strong>, <strong>Cultural Fit</strong>, and <strong>Domain Knowledge</strong>.</td></tr>
+                <tr><td>How to Master It</td><td>
+                    <ul>
+                        <li><strong>STAR Method:</strong> Use for behavioral questions (Situation, Task, Action, Result).</li>
+                        <li><strong>Code Fluently:</strong> Clarify the problem, state your approach, write clean code, and then test with examples.</li>
+                    </ul>
+                </td></tr>
             </table>
         </div>
     </div>
-    <scroll-top></scroll-top>
 </div>
 
 <script src="assets/js/vendor/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="assets/js/vendor/bootstrap.min.js"></script>
 <script src="assets/js/vendor/particle.js"></script>
-<script type="module" src="components/site-header.js"></script>
-<script type="module" src="components/scroll-top.js"></script>
-<script src="assets/js/main.js"></script>
 <script>
-    if (typeof gsap !== 'undefined') {
-        gsap.config({trialWarn: false});
-    }
-
-    if (typeof particlesJS !== 'undefined') {
+    // Initialize Particles
+    if(typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             "particles": {
-                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#60a5fa" },
+                "number": { "value": 30, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
                 "shape": { "type": "circle" },
-                "opacity": { "value": 0.5 },
+                "opacity": { "value": 0.2, "random": true },
                 "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#60a5fa", "opacity": 0.4, "width": 1 },
-                "move": { "enable": true, "speed": 2, "out_mode": "out" }
+                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.1, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
             },
             "interactivity": {
-                "detect_on": "canvas",
-                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } }
-            },
-            "retina_detect": true
+                "events": { "onhover": { "enable": true, "mode": "repulse" } }
+            }
         });
     }
 </script>
