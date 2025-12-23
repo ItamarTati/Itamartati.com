@@ -32,25 +32,156 @@
             --separator: #475569;
             --note-bg: #0f3a1f;
             --note-border: #22c55e;
-            --radius: 12px;
-            --transition: all 0.3s ease;
+            --radius: 16px;
+            --transition: all 0.4s ease;
         }
-        body { background: var(--bg-body); color: var(--text-primary); }
+
+        body {
+            background: var(--bg-body);
+            color: var(--text-primary);
+            font-size: 22px;
+            line-height: 1.7;
+        }
+
         #particles-js { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; }
-        .page-with-left-header { padding-left: 280px; position: relative; z-index: 1; }
-        .pillar-section { margin-bottom: 4rem; }
-        .pillar-section h2 { color: var(--accent); margin-bottom: 1.5rem; font-size: 2.2rem; }
-        table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 1.2rem 0; background-color: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-        td { padding: 1.2rem; border-bottom: 1px solid var(--border); vertical-align: top; }
-        td:first-child { font-weight: 600; background-color: var(--table-header); width: 28%; color: var(--text-secondary); border-right: 1px solid var(--border); }
-        .formula { background-color: var(--formula-bg); color: var(--text-primary); padding: 1rem; border-left: 5px solid var(--formula-border); margin: 1rem 0; font-family: 'Courier New', monospace; font-size: 1rem; border-radius: 0 var(--radius) var(--radius) 0; }
-        .example { background-color: var(--example-bg); color: var(--text-primary); padding: 1rem; border-left: 5px solid var(--example-border); margin: 1rem 0; border-radius: 0 var(--radius) var(--radius) 0; }
-        .emphasis { color: var(--emphasis); font-weight: bold; }
-        .separator { height: 1px; background: linear-gradient(to right, transparent, var(--separator), transparent); margin: 3rem 0; }
-        .intro { font-style: italic; text-align: center; margin: 2rem 0 3rem; padding: 1.5rem; background-color: var(--card-bg); border-radius: var(--radius); border: 1px dashed var(--border); color: var(--text-secondary); font-size: 1.2rem; }
-        ul { padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; color: var(--text-secondary); }
-        @media (max-width: 1199px) { .page-with-left-header { padding-left: 0; } }
+
+        .page-with-left-header {
+            padding-left: 320px;
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .container.pt-5 {
+            padding-top: 6rem !important;
+        }
+
+        h1.title {
+            font-size: 5.5rem !important;
+            line-height: 1.1;
+            margin-bottom: 3rem !important;
+        }
+
+        .intro {
+            font-size: 1.8rem !important;
+            font-style: italic;
+            text-align: center;
+            margin: 3rem 0 5rem;
+            padding: 2.5rem;
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+            border: 2px dashed var(--border);
+            color: var(--text-secondary);
+        }
+
+        .pillar-section {
+            margin-bottom: 8rem;
+        }
+
+        .pillar-section h2 {
+            color: var(--accent);
+            margin-bottom: 2.5rem;
+            font-size: 4.2rem !important;
+        }
+
+        .pillar-section > p {
+            font-size: 2rem !important;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 2.5rem 0;
+            background-color: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+
+        td {
+            padding: 3.5rem 3.5rem !important;
+            border-bottom: 2px solid var(--border);
+            vertical-align: top;
+            font-size: 2.1rem !important;
+            line-height: 1.6;
+        }
+
+        td:first-child {
+            font-weight: 700;
+            background-color: var(--table-header);
+            width: 32%;
+            color: #ffffff;
+            border-right: 2px solid var(--border);
+            font-size: 2.3rem !important;
+        }
+
+        .formula {
+            background-color: var(--formula-bg);
+            color: var(--text-primary);
+            padding: 2.5rem;
+            border-left: 8px solid var(--formula-border);
+            margin: 3rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 2.2rem !important;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            line-height: 1.6;
+        }
+
+        .example {
+            background-color: var(--example-bg);
+            color: var(--text-primary);
+            padding: 2.5rem;
+            border-left: 8px solid var(--example-border);
+            margin: 3rem 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-size: 2rem !important;
+            line-height: 1.6;
+        }
+
+        .emphasis {
+            color: var(--emphasis);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .separator {
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--separator), transparent);
+            margin: 6rem 0;
+        }
+
+        ul {
+            padding-left: 3rem;
+        }
+
+        li {
+            margin-bottom: 2rem;
+            font-size: 2rem !important;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 1199px) {
+            .page-with-left-header {
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1.title { font-size: 4.2rem !important; }
+            .pillar-section h2 { font-size: 3.4rem !important; }
+            .pillar-section > p { font-size: 1.8rem !important; }
+            td { padding: 2.5rem !important; font-size: 1.8rem !important; }
+            td:first-child { font-size: 2rem !important; }
+            .formula { font-size: 1.9rem !important; padding: 2rem; }
+            .example { font-size: 1.7rem !important; padding: 2rem; }
+            li { font-size: 1.7rem !important; }
+            .intro { font-size: 1.6rem !important; }
+        }
     </style>
 </head>
 <body class="dark">
@@ -67,7 +198,7 @@
         <h1 class="title tmp-scroll-trigger text-center mb-4">The Four Pillars of Getting a Software Engineer Job</h1>
 
         <div class="intro">
-            This framework focuses on treating the job search as a structured process, ensuring you maximize both your <strong>volume</strong> and your <strong>quality</strong> across all stages.
+            This framework focuses on treating the job search as a structured process, ensuring you maximise both your <strong>volume</strong> and your <strong>quality</strong> across all stages.
         </div>
 
         <div class="separator"></div>
@@ -86,15 +217,15 @@
 
         <div class="pillar-section" id="pillar2">
             <h2>2. Good Quality CV: The Metric-Driven Storyteller</h2>
-            <p>Your CV is a marketing document that proves your <strong>impact</strong>.</p>
+            <p>Your CV is a marketing document that proves your impact.</p>
             <table>
                 <tr><td>Your Focus</td><td>A CV that talks about your accomplishments through <strong>metrics</strong> (quantifiable results).</td></tr>
                 <tr><td>Why it Works</td><td>Recruiters spend <strong>6-7 seconds</strong> per CV. Metrics are the fastest way to communicate the <strong>value you created</strong>.</td></tr>
                 <tr><td>How to Implement</td><td>
                     <div class="formula">"Accomplished X, as measured by Y, by doing Z."</div>
                     <div class="example">
-                        <strong>Instead of:</strong> "Responsible for improving website speed."<br>
-                        <strong>Use:</strong> "Optimized key database queries, <strong>reducing page load time by 40%</strong> and improving user retention."
+                        <strong>Instead of:</strong> "Responsible for improving website speed."<br><br>
+                        <strong>Use:</strong> "Optimised key database queries, reducing page load time by 40% and improving user retention."
                     </div>
                 </td></tr>
             </table>
@@ -129,7 +260,7 @@
                 <tr><td>Why it Works</td><td>Interviews assess <strong>Technical Ability</strong>, <strong>Cultural Fit</strong>, and <strong>Domain Knowledge</strong>.</td></tr>
                 <tr><td>How to Master It</td><td>
                     <ul>
-                        <li><strong>STAR Method:</strong> Use for behavioral questions (Situation, Task, Action, Result).</li>
+                        <li><strong>STAR Method:</strong> Use for behavioural questions (Situation, Task, Action, Result).</li>
                         <li><strong>Code Fluently:</strong> Clarify the problem, state your approach, write clean code, and then test with examples.</li>
                     </ul>
                 </td></tr>
@@ -171,17 +302,16 @@
 
 
 <script>
-    // Initialize Particles
     if(typeof particlesJS !== 'undefined') {
         particlesJS('particles-js', {
             "particles": {
-                "number": { "value": 30, "density": { "enable": true, "value_area": 800 } },
+                "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
                 "color": { "value": "#ffffff" },
                 "shape": { "type": "circle" },
-                "opacity": { "value": 0.2, "random": true },
-                "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.1, "width": 1 },
-                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+                "opacity": { "value": 0.3, "random": true },
+                "size": { "value": 4, "random": true },
+                "line_linked": { "enable": true, "distance": 180, "color": "#ffffff", "opacity": 0.15, "width": 1.5 },
+                "move": { "enable": true, "speed": 2.5, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
             },
             "interactivity": {
                 "events": { "onhover": { "enable": true, "mode": "repulse" } }
