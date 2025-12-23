@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Four Pillars of Getting a Software Engineer Job | Itamar Tati</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        :root {
+            --bg-body: #0f172a;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --accent: #60a5fa;
+            --accent-hover: #3b82f6;
+            --border: #334155;
+            --card-bg: #1e293b;
+            --table-header: #334155;
+            --formula-bg: #451a03;
+            --formula-border: #f97316;
+            --example-bg: #082f49;
+            --example-border: #0ea5e9;
+            --emphasis: #fca5a5;
+            --separator: #475569;
+            --note-bg: #0f3a1f;
+            --note-border: #22c55e;
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+        body { background: var(--bg-body); color: var(--text-primary); }
+        #particles-js { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; }
+        .page-with-left-header { padding-left: 280px; position: relative; z-index: 1; }
+        .pillar-section { margin-bottom: 4rem; }
+        .pillar-section h2 { color: var(--accent); margin-bottom: 1.5rem; font-size: 2.2rem; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 1.2rem 0; background-color: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        td { padding: 1.2rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+        td:first-child { font-weight: 600; background-color: var(--table-header); width: 28%; color: var(--text-secondary); border-right: 1px solid var(--border); }
+        .formula { background-color: var(--formula-bg); color: var(--text-primary); padding: 1rem; border-left: 5px solid var(--formula-border); margin: 1rem 0; font-family: 'Courier New', monospace; font-size: 1rem; border-radius: 0 var(--radius) var(--radius) 0; }
+        .example { background-color: var(--example-bg); color: var(--text-primary); padding: 1rem; border-left: 5px solid var(--example-border); margin: 1rem 0; border-radius: 0 var(--radius) var(--radius) 0; }
+        .emphasis { color: var(--emphasis); font-weight: bold; }
+        .separator { height: 1px; background: linear-gradient(to right, transparent, var(--separator), transparent); margin: 3rem 0; }
+        .intro { font-style: italic; text-align: center; margin: 2rem 0 3rem; padding: 1.5rem; background-color: var(--card-bg); border-radius: var(--radius); border: 1px dashed var(--border); color: var(--text-secondary); font-size: 1.2rem; }
+        @media (max-width: 1199px) { .page-with-left-header { padding-left: 0; } }
+    </style>
+</head>
+<body class="dark">
+
+<div id="particles-js"></div>
+
+<div class="page-with-left-header">
+    <site-header profile-image="assets/images/profilepic.jpeg" mobile-logo="assets/images/logo.png"></site-header>
+    <div class="container pt-5 end">
+        <h1 class="title tmp-scroll-trigger text-center mb-4">The Four Pillars of Getting a Software Engineer Job</h1>
+        <div class="intro">This framework focuses on treating the job search as a structured process, ensuring you maximize both your <strong>volume</strong> and your <strong>quality</strong> across all stages.</div>
+        <div class="separator"></div>
+        <div class="pillar-section" id="pillar1">
+            <h2>1. Mass Apply: The Numbers Game</h2>
+            <table>
+                <tr><td>Your Goal</td><td>Apply to at least <span class="emphasis">5 jobs every day</span>.</td></tr>
+                <tr><td>Why it Works</td><td><strong>Software engineering job hunting is a numbers game.</strong></td></tr>
+            </table>
+        </div>
+        <div class="separator"></div>
+        <div class="pillar-section" id="pillar2">
+            <h2>2. Good Quality CV: The Metric-Driven Storyteller</h2>
+            <table>
+                <tr><td>Your Focus</td><td>A CV that talks about your accomplishments through <strong>metrics</strong>.</td></tr>
+            </table>
+        </div>
+        <div class="separator"></div>
+        <div class="pillar-section" id="pillar3">
+            <h2>3. Good Portfolio: Production-Ready Proof</h2>
+            <table>
+                <tr><td>Your Requirement</td><td>Portfolio needs to have <strong>professional production-ready projects</strong>.</td></tr>
+            </table>
+        </div>
+        <div class="separator"></div>
+        <div class="pillar-section" id="pillar4">
+            <h2>4. Good Interview Skills: Confident Execution</h2>
+            <table>
+                <tr><td>Your Definition</td><td>A good interviewer is someone who <strong>speaks confidently</strong>, is <strong>prepared</strong>, and can <strong>code</strong>.</td></tr>
+            </table>
+        </div>
+    </div>
+    <scroll-top></scroll-top>
+</div>
+
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/particle.js"></script>
+<script type="module" src="components/site-header.js"></script>
+<script type="module" src="components/scroll-top.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    if (typeof gsap !== 'undefined') {
+        gsap.config({trialWarn: false});
+    }
+
+    if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#60a5fa" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5 },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#60a5fa", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } }
+            },
+            "retina_detect": true
+        });
+    }
+</script>
+</body>
+</html>
