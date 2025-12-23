@@ -65,12 +65,12 @@ class SiteHeader extends HTMLElement {
             </div>
           </div>
           <ul class="tmp-mainmenu onepagenav-click">
-            <li><a class="smoth-animation" href="#home">Home</a></li>
-            <li><a class="smoth-animation" href="#resume">Resume</a></li>
-            <li><a class="smoth-animation" href="#portfolio">Portfolio</a></li>
-            <li><a class="smoth-animation" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoth-animation" href="#videos">Videos</a></li>
-            <li><a class="smoth-animation" href="#blog">Blog</a></li>
+            <li><a class="smoth-animation" href="index.html#home">Home</a></li>
+            <li><a class="smoth-animation" href="index.html#resume">Resume</a></li>
+            <li><a class="smoth-animation" href="index.html#portfolio">Portfolio</a></li>
+            <li><a class="smoth-animation" href="index.html#testimonials">Testimonials</a></li>
+            <li><a class="smoth-animation" href="index.html#videos">Videos</a></li>
+            <li><a class="smoth-animation" href="index.html#blog">Blog</a></li>
           </ul>
           <div class="social-share-style-1 mt--40">
             <span class="title">Connect With Me On</span>
@@ -83,6 +83,34 @@ class SiteHeader extends HTMLElement {
         </div>
       </div>
     `;
+
+    this.setupMobileMenu();
+  }
+
+  setupMobileMenu() {
+    const menuBtn = this.querySelector('.tmp-menu-bars');
+    const closeBtn = this.querySelector('.close-button');
+    const mobileMenu = this.querySelector('.tmp-popup-mobile-menu');
+
+    if (!menuBtn || !closeBtn || !mobileMenu) return;
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
   }
 }
+
 customElements.define('site-header', SiteHeader);
