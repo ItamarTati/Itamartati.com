@@ -13,6 +13,32 @@
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        /* This ensures the particles container covers the hero area but stays behind the content */
+        .hero-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: #0f0f11; /* Fallback dark background */
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            pointer-events: none; /* Allows you to still click buttons/links in the hero */
+        }
+
+        hero-section {
+            position: relative;
+            z-index: 2; /* Sits above the particles */
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,12 +49,14 @@
 
 <div class="page-with-left-header">
 
-    <hero-section
-            id="particles-js"
-            profile-image="assets/images/profilepic.jpeg"
-            name="Itamar Tati"
-            titles='["Backend Engineer","Scala Developer","Kafka Specialist","Java Developer","Python Developer","PHP Developer","Node.js Developer"]'>
-    </hero-section>
+    <div class="hero-wrapper">
+        <div id="particles-js"></div>
+        <hero-section
+                profile-image="assets/images/profilepic.jpeg"
+                name="Itamar Tati"
+                titles='["Backend Engineer","Scala Developer","Kafka Specialist","Java Developer","Python Developer","PHP Developer","Node.js Developer"]'>
+        </hero-section>
+    </div>
 
     <section class="tmp-resume-area" id="resume">
         <div class="inner">
@@ -142,11 +170,45 @@
 <script src="assets/js/vendor/particle.js"></script>
 <script src="assets/js/plugins/text-type.js"></script>
 <script src="assets/js/main.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-    particlesJS('particles-js', {"particles":{"number":{"value":20,"density":{"enable":true,"value_area":800}},"color":{"value":["#ffffff",]},"shape":{"type":"star","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.8,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":4,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":800,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    window.onload = function() {
+        if(typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": { "value": 70, "density": { "enable": true, "value_area": 800 } },
+                    "color": { "value": "#ffffff" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.3, "random": true },
+                    "size": { "value": 4, "random": true },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 1,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out"
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": { "enable": true, "mode": "grab" },
+                        "onclick": { "enable": true, "mode": "push" }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+    };
 </script>
 </body>
 </html>
